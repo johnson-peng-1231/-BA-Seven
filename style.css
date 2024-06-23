@@ -129,8 +129,8 @@ canvas {
     text-align: center;
 }
 
-/* 媒體查詢：手機模式 */
-@media (max-width: 768px) {
+/* 媒體查詢：手機直向模式 */
+@media (max-width: 768px) and (orientation: portrait) {
     .row {
         flex-direction: column;
     }
