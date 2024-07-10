@@ -64,6 +64,7 @@ footer {
 }
 
 .friend {
+    position: relative;
     text-align: center;
     margin: 10px;
 }
@@ -72,6 +73,31 @@ footer {
     max-width: 150px;
     height: auto;
     border-radius: 50%;
+}
+
+.speech-bubble {
+    position: absolute;
+    top: -20px; /* Adjust this value to position the speech bubble as needed */
+    left: 90%;
+    transform: translateX(-50%);
+    background: #FFD700;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-size: 12px; /* Adjust this value to change text size */
+    width: 40px; /* Adjust this value to change bubble width */
+    text-align: center;
+}
+
+.speech-bubble::after {
+    content: '';
+    position: absolute;
+    bottom: -18px; /* Adjust this value to position the tail */
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: #FFD700 transparent transparent transparent;
 }
 
 #random-photo {
@@ -199,6 +225,8 @@ canvas {
         flex-direction: column;
     }
 }
+
+
 
 /* 其他樣式保持不變 */
 
