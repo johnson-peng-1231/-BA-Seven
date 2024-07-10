@@ -196,3 +196,26 @@ canvas {
         flex-direction: column;
     }
 }
+/* 其他樣式保持不變 */
+
+.birthday-card {
+    text-align: center;
+    margin-top: 20px;
+    background: #000000;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.birthday-card .snoopy {
+    font-family: monospace;
+    color: #FFD700; /* 黃色 */
+    white-space: pre;
+}
+
+.birthday-card p {
+    font-size: 1.2rem;
+    color: #FFD700;
+    margin-top: 10px;
+}
